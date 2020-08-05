@@ -1,10 +1,14 @@
 //widescreens
 @include media_XLscreens{
-
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 //large screens
 @include media_largescreens{
-    
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 //tablets & medium laptos
 @include media_mediumscreens{
@@ -48,10 +52,16 @@
         'job3';
         grid-template-columns: 1fr;
     }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 //smart phones
 @include media_smallscreens{
     main#Home h1{
         margin-top: 10vh;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
